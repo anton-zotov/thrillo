@@ -1,0 +1,184 @@
+html,
+body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    color: #333;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue",
+        sans-serif !important;
+}
+
+a {
+    color: rgb(0, 100, 200);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: rgb(0, 80, 160);
+}
+
+label {
+    display: block;
+}
+
+button {
+    border: none;
+    background: none;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+input,
+.button,
+select,
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+    padding: 0.4em;
+    margin: 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+
+.button {
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+input:disabled {
+    color: #ccc;
+}
+
+input[type="range"] {
+    height: 0;
+}
+
+button:disabled {
+    color: #999;
+}
+
+/* button:not(:disabled):active {
+    background-color: #ddd;
+} */
+
+button:focus {
+    border-color: #666;
+}
+
+.save-button {
+    background-color: #191919;
+    border: 1px solid #000000;
+    color: white;
+    padding: 3px 12px;
+    border-radius: 6px;
+}
+
+.remove-button {
+    background-color: #ed2534;
+    border: 1px solid #be1926;
+    color: white;
+    padding: 3px 12px;
+    border-radius: 6px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form label {
+    padding-bottom: 6px;
+}
+
+.form label span {
+    display: inline-block;
+    width: 113px;
+}
+
+.form .error {
+    color: red;
+}
+
+.form-button {
+    margin-top: 10px;
+}
+
+.link {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    background: none;
+    cursor: pointer;
+    color: black;
+    text-decoration: underline;
+}
+
+.login-switch {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.loading {
+    text-align: center;
+    font-size: 30px;
+    padding-top: 60px;
+}
+
+main {
+    padding-top: 60px;
+}
+
+header {
+    background-color: #f15025;
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: calc(100vw - 40px);
+}
+
+header h1 {
+    flex-grow: 1;
+    margin: 0;
+    font-size: 30px;
+}
+
+header .link {
+    padding-left: 20px;
+    color: white;
+}
+
+.board {
+    display: flex;
+    align-items: start;
+    padding: 8px 0;
+}
+.column {
+    flex-shrink: 0;
+    background-color: #ced0ce;
+    width: 260px;
+    padding: 8px;
+    margin: 0 4px;
+}
+
+.column > button {
+    width: 100%;
+}
